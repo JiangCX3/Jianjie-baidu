@@ -1,0 +1,120 @@
+<!doctype html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+<link rel="apple-touch-icon" href="/bd_custom_icon.png">
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>简洁百度 - 百度一下，你就知道</title>
+</head>
+<style>
+    .footer {
+        text-align: center;
+        font-size: 10px;
+        opacity: 0.3;
+        padding-top: 100px;
+        color: #000000;
+    }
+
+    #s-input {
+        border-radius: 3px;
+    }
+
+    /* 大屏幕 */
+
+    .container {
+        width: 600px;
+        margin: 6% auto 0;
+        padding: 50px 5%;
+    }
+
+    .bd-title {
+        width: 300px;
+        padding: 0 150px 40px;
+    }
+
+    #s-input {
+        width: 100%;
+        height: 30px;
+        font-size: 15px;
+        padding: 1px 6px;
+        border: #bebebe 1px solid;
+    }
+
+    #s-input:focus {
+        border: #bebebe 2px solid;
+        padding: 0 5px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    #s-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 3px;
+        background: #f0f0f0;
+        color: #686868;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 9px 25px;
+        margin: 20px 240px;
+    }
+
+
+
+    /* 移动设备 */
+    @media screen and (max-width:670px) {
+        .container {
+            width: 80vw;
+            margin: 6% auto 0;
+            /* background-color: #efefef; */
+            padding: 50px 5%;
+        }
+
+        .bd-title {
+            width: 70%;
+            padding: 0 15% 20px;
+        }
+
+        #s-input {
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            padding: 0 5px;
+        }
+
+        #s-input:focus {
+            border: #bebebe 2px solid;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        #s-btn {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img class="bd-title" src="./bd.png">
+        <form method="GET" action="https://www.baidu.com/s?wd=hello%20world" id="wd">
+            <input type="text" name="wd" id="s-input"><br><br><br><br>
+            <a id="s-btn" href="javascript:wd.submit()">百度一下</a>
+        </form>
+        <p class="footer">
+            回车键开始搜索 <br>
+            简洁百度 | JIANGCX.CN | 闽ICP备19019883号 | <a href="./about.html" target="_blank">关于</a>
+        </p>
+    </div>
+</body>
+
+</html>
